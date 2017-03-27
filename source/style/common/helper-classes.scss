@@ -1,0 +1,7 @@
+.hidden {
+	visibility: hidden;
+}
+
+.clearfix {
+	@include cf;
+}

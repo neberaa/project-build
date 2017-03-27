@@ -1,5 +1,12 @@
-body {
-  margin: 0;
-}
 
-@import 'common/greating';
+// ================== Common import ==============
+
+@import 'common/basic';
+@import 'common/fonts';
+@import 'common/mixins';
+@import 'common/helper-classes';
+
+// ================== Pages import ==============
+
+@import 'pages/index';
+@import 'pages/another-page';
