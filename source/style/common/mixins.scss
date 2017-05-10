@@ -31,16 +31,10 @@
 
 // ============= Font mixins ===============
 
-@mixin font($name, $filename, $weight: false, $size: false, $colour: false,  $lh: false) {
-    @font-face {
-		font-family: $name;
-		src: url('../build/fonts/#{$filename}.woff2') format('woff2'),
-			 url('../build/fonts/#{$filename}.woff') format('woff');
-		@if $weight { font-weight: $weight; }
-		@if $size { font-size: $size; }
-		@if $colour { color: $colour; }
-		@if $lh { line-height: $lh; }
-	}
+@mixin roboto($weight) {
+	@if $weight == light {font-family: 'roboto-light';}
+	@if $weight == regular {font-family: 'roboto-regular';}
+	@if $weight == bold {font-family: 'roboto-bold';}
 }
 
 // =============== Media queries ================
